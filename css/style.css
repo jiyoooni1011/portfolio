@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Libre+Barcode+128+Text|Noto+Sans');
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* 기본 reset 시작 */
+* { padding:0; margin:0; box-sizing:border-box; }
+section, header, nav, footer, aside, article { display:block; }
+a { text-decoration:none; color:#333; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+li { list-style:none; list-style-position:inside; }
+img { border:0; vertical-align:top; }
+address { font-style:normal; }
+table, td, th { border-collapse:collapse; }
+/* 기본 reset 끝 */
+section { height:100vh; }
+section.container {
+    padding-top:100px;
+    margin-left:12%;
+    margin-right:12%;
+}
+li {color:#333;}
+section .wrap {
+    padding-left:41px;
+}
+/* header 시작 */
+header {
+    width:100%;
+    height:70px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top:15px;
+    position:fixed;
+    top:0;
+    left:0;
+}
+header h1 {
+    margin-left:1%;
+}
+header img#nav {
+    width:40px;
+    height:40px;
+    margin-top:5px;
+    cursor: pointer;
+}
+header > div {
+    margin-right:1%;
+}
+header .side {
+    position:fixed; 
+    top:0;
+    padding:20px;
+    width:18%;
+    height:100%;
+    right:-22%;
+    background:rgba(0,0,0,0.85);
+    z-index: 10;
+}
+header .side i {
+    font-size:40px;
+    font-weight: bold;
+    color:#d8d8d8;
+    cursor: pointer;
+}
+header .side li {
+    color:#fff;
+    height:55px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: "Noto sans";
+    cursor: pointer;
+    z-index: 10;
+}
+header .side li:hover {
+    color:#fdcf09;
+}
+header .side li:nth-child(1) {
+    text-align: right;
+    padding-bottom:20px;
+}
+/* header 끝 */
+/* page 공통 부분 시작 */
+section h2 {
+    font-size:36px;
+    margin-bottom:40px;
+    font-family:"Exo 2";
+    font-weight: 600;
+}
+section h2 div {
+    width:27px;
+    height:8px;
+    background: #fdcf09;
+    float:left;
+    margin-top:20px;
+    margin-right:15px;
+}
+section .title {
+    border-bottom:2px solid #333;
+    width:100%;
+    font-family: "Exo 2";
+    margin-bottom:25px;
+}
+section .title h3 {
+    line-height:40px;
+    font-size:24px;
+    font-weight: 500;
+}
+/* page 공통 부분 끝 */
+/* side 시작 */
+body > div.side {
+    position:fixed; 
+    bottom:1%;
+    left:-50px;
+    width: calc(100vh - 180px);
+    height: 50px;
+    padding-right: 5px;
+    overflow: hidden;
+    padding-left: 10px;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    padding-bottom:2px;
+}
+body > div.side ul {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    border-bottom:1px solid #ccc;
+}
+body > div.side ul li {
+    margin-left:4%;
+    margin-right:4%;
+    padding-top:15px;
+    padding-bottom:14px;
+    font-size:14px;
+    font-family: "Exo 2";
+    color:#ccc;
+    cursor: pointer;
+}
+body > div.side ul li span {
+    display:block;
+    width:0;
+    height:3px;
+    background:#333;
+    margin-top:14px;
+    z-index: 5;
+    margin:14px auto;
+}
+body > div.side ul li.on {
+    color:#000;
+}
+/* side 끝 */
+
+/* page 1 시작 */
+section#page1 {
+    position: relative;
+    background:url("../img/one_bg.png") 70% 60% no-repeat;
+} 
+section#page1 div.box {
+    position: relative;
+    width:40%;
+    height:40%;
+    top:24%;
+    left:26%;
+    text-align: center;
+}
+section#page1 div.box h2 {
+    position: absolute;
+    top:25%;
+    left:11.5%;
+    font-size:200px;
+    font-family: "Libre Barcode 128 Text";
+    font-weight: 100;
+}
+section#page1 div.box div {
+    position: absolute;
+    opacity: 0;
+}
+section#page1 div.box .top_border {
+    width:100%;
+    height:28%;
+    border:1px solid #ccc;
+    border-bottom:none;
+}
+section#page1 div.box .top_edge {
+    border:3px solid #fdcf09;
+    left:-0.1%;
+    top:-0.2%;
+    width:50px;
+    height:50px;
+    border-right:none;
+    border-bottom:none;
+}
+section#page1 div.box .bot_border {
+    width:100%;
+    bottom:0;
+    height:28%;
+    border:1px solid #ccc;
+    border-top:none;
+}
+section#page1 div.box .bot_edge {
+    border:3px solid #fdcf09;
+    right:-0.1%;
+    bottom:-0.5%;
+    width:50px;
+    height:50px;
+    border-left:none;
+    border-top:none;
+}
+section#page1 div#down {
+    position: absolute;
+    top:87%;
+    left:45%;
+}
+section#page1 div#down img {
+    width:90%;
+}
+/* page 1 끝 */
+/* page 2 시작 */
+section#page2 div.wrap {
+    display:flex;
+    flex-flow: column wrap;
+    width:100%;
+    height:80%;
+}
+/* 프로필 시작 */
+section#page2 div.wrap #profile {
+    height:45%;
+    margin-bottom:6%;
+    width:30%;
+    margin-right:5%;
+}
+section#page2 div.wrap #profile table {
+    width:100%;
+}
+section#page2 div.wrap #profile table tr {
+    height:45px;
+}
+section#page2 #profile table td:nth-child(1) {
+    width:35%;
+    font-family: "Exo 2";
+    font-size:16px;
+}
+section#page2 #profile table td:nth-child(2) {
+    font-family:"Nanumgothic";
+}
+/* 프로필 끝 */
+/* 라이크 시작 */
+section#page2 div.wrap #likes {
+    height:27%;
+    width:30%;
+    margin-right:5%;
+}
+section#page2 div.wrap #likes ul {
+    width:100%;
+    padding-top:5px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+section#page2 div.wrap #likes ul li {
+    width:30%;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom:20px;
+}
+section#page2 div.wrap #likes ul li p {
+    padding-top:5px;
+}
+/* 라이크 끝 */
+section#page2 div.wrap #photo {
+    height:80%;
+    width:30%;
+    margin-top:10%;
+    text-align: center;
+}
+section#page2 div.wrap #photo img {
+    width:100%;
+}
+/* 스킬 시작 */
+section#page2 div.wrap #skills {
+    width:30%;
+    height: 70%;
+    margin-left:5%;
+}
+section#page2 div.wrap #skills .title {
+    margin-bottom:15px;
+}
+section#page2 div.wrap #skills table {
+    width:100%;
+}
+section#page2 div.wrap #skills table tr {
+    height:65px;
+}
+section#page2 div.wrap #skills table td:nth-child(1) {
+    width:18%;
+    padding-top:3px;
+}
+section#page2 div.wrap #skills table p {
+    font-family:"Noto Sans";
+}
+section#page2 div.wrap #skills table p:nth-child(1) {
+    font-size:14px;
+}
+section#page2 div.wrap #skills table p:nth-child(2) {
+    font-size:13px;
+    font-weight: 600;
+    line-height: 13px;
+}
+section#page2 div.wrap #skills table div {
+    margin-top:3px;
+}
+section#page2 div.wrap #skills table p:nth-child(4) {
+    width:100%;
+    height:6px;
+    background:#bbb;
+    margin-top:2px;
+}
+/* 스킬 끝 */
+/* language 시작 */
+section#page2 div.wrap #lang {
+    width:30%;
+    height: 20%;
+    margin-left:5%;
+}
+section#page2 div.wrap #lang ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+section#page2 div.wrap #lang ul li {
+    margin-right: 10%;
+    margin-left: 10%;
+    width:82px;
+    height:82px;
+    border:3px solid #fdcf09;
+    border-radius: 50%;
+    padding-left:2px;
+    padding-top:2px;
+}
+section#page2 div.wrap #lang ul li:nth-child(2) {
+    border-left: 3px solid transparent;
+}
+section#page2 div.wrap #lang p:nth-child(1) {
+    border:2.5px solid #ccc;
+    width:72px;
+    height:72px;
+    text-align: center;
+    padding-top:20px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: "Exo 2";
+    font-weight: 600;
+}
+section#page2 div.wrap #lang p:nth-child(2) {
+    padding-top:10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Exo 2";
+    font-weight: 500;
+}
+/* language 끝 */
+/* page 2 끝 */
+
+/* page 3 시작 */
+section#page3 div.wrap {
+    display:flex;
+    flex-flow:row nowrap;
+}
+/* edu 시작 */
+section#page3 div.wrap #edu {
+    width:50%;
+}
+section#page3 div.wrap #edu table {
+    background:url("../img/eduline.png") no-repeat;
+    background-position: 39.2%;
+    margin-top:60px;
+}
+section#page3 div.wrap #edu table tr {
+    height:80px;
+}
+section#page3 div.wrap #edu table td:nth-child(1) {
+    background:url("../img/date1.png") right no-repeat;
+    text-align: right;
+    padding-right:6%;
+    font-size:18px;
+    width:35%;
+    font-family: "Exo 2";
+    color:#fff;
+    font-weight: 600;
+}
+section#page3 div.wrap #edu table td:nth-child(2) {
+    width:10%;
+    text-align: center;
+}
+section#page3 div.wrap #edu table td:nth-child(3) {
+    font-size:18px;
+    font-weight: 600;
+    font-family: "nanum gothic";
+}
+section#page3 div.wrap #edu table td:nth-child(3) p {
+    font-size:14px;
+    color:#999;
+    font-weight: 500;
+    line-height: 25px;
+}
+section#page3 div.wrap #edu table td#long {
+    background:url("../img/date2.png") right no-repeat;
+    text-align: center;
+    padding:0;
+    padding-left:10px;
+}
+/* edu 끝 */
+/* license 시작 */
+section#page3 div.wrap #license {
+    width:25%;
+    margin-left:15%;
+    margin-top:20%;
+}
+section#page3 div.wrap #license table {
+    width:100%;
+    margin-left:10px;
+}
+section#page3 div.wrap #license table tr {
+    height:50px;
+}
+section#page3 div.wrap #license table td:nth-child(1) {
+    width:30%;
+    font-family: "Exo 2";
+    font-size: 17px;
+}
+section#page3 div.wrap #license table td:nth-child(2) {
+    font-size: 15px;
+}
+/* license 끝 */
+/* page 3 끝 */
+
+/* page 4 시작 */
+section#page4 section > div {
+    width:100%;
+    height:700px;
+    padding-left:
+}
+section#page4 ul {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-family: "nanum gothic";
+}
+section#page4 ul li {
+    border:1px solid #aaa;
+    width:29%;
+    height:100%;
+    margin-top:200px;
+    opacity: 0;
+    overflow: hidden;
+}
+section#page4 ul li > div {
+    position:relative;
+    width:100%;
+    height:317px;
+}
+section#page4 ul li div.blackbg {
+    background:rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    text-align: center;
+    padding-top:29.5%;
+    padding-bottom:29.5%;
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+section#page4 ul li div.blackbg img {
+    padding-right:15px;
+}
+section#page4 ul li h4 {
+    font-size:18px;
+    font-weight: 600;
+    padding: 25px 30px 0 30px;
+}
+section#page4 ul li:nth-child(2) h4 {
+    letter-spacing: -1px;
+}
+section#page4 ul li p {
+    line-height:25px;
+    font-size:14px;
+    padding:20px 30px;
+}
+section#page4 ul li p:nth-child(4) {
+    line-height: 22px;
+    padding-top:0;
+}
+/* page 4 끝 */
+
+/* page 5 시작 */
+section#page5 section {
+    font-family: "nanum gothic";
+}
+section#page5 section > div {
+    position: relative;
+    width:50%;
+    margin-left:1%;
+    margin-top:60px;
+    float:left;
+}
+section#page5 section > div > img {
+    width:100%;
+}
+section#page5 .blackbg {
+    background:rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    padding-right:20px;
+    padding-top:30%;
+    display:none;
+}
+section#page5 .text {
+    width:38%;
+    margin-left:5%;
+    margin-right:6%;
+    padding-top:50px;
+}
+section#page5 .text h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+section#page5 .text h3 span {
+    font-size:18px;
+    font-weight: normal;
+}
+section#page5 .text p {
+    padding-bottom:5px;
+}
+section#page5 .text p:last-child {
+    padding-top:20px;
+}
+/* page 5 끝 */
+
+/* page 6 시작 */
+section#page6 .container ul {
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    align-items:flex-start;
+    margin-top:70px;
+}
+section#page6 .container li {
+    height:243px;
+    max-width:25%;
+    cursor: pointer;
+    overflow: hidden;
+}
+section#page6 .container li img {
+    height:100%;
+}
+.modal {
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.85);
+    padding:30px;
+    text-align:center;
+}
+.modal span {
+    float:right;
+    color:#fff;
+    font-size:30px;
+    font-weight: bold;
+    padding-right:15px;
+    cursor: pointer;
+}
+.modalimg {
+    margin-top:100px;
+    border:7px solid #fff;
+    border-radius:5px;
+}
+.modal p {
+    color:#fff;
+}
+/* page 6 끝 */
+
+/* web - 서브웨이 화면 시작 */
+.sub_header {
+    background:#fff;
+}
+.sub_wrap {
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+}
+.sub_wrap #link {
+    position: absolute;
+    z-index: 1;
+    top:380px;
+    left:39%;
+    border:1px solid #333;
+    padding:12px 18px;
+}
+.sub_wrap #link2 {
+    position: absolute;
+    z-index: 1;
+    top:380px;
+    right:39%;
+    border:1px solid #333;
+    padding:12px 18px;
+}
+.sub_wrap #lib_link {
+    position: absolute;
+    z-index: 1;
+    top:380px;
+    left:45.5%;
+    border:1px solid #333;
+    padding:12px 18px;
+}
+.sub_wrap #ghi_link {
+    position: absolute;
+    z-index: 1;
+    top:380px;
+    left:45.5%;
+    border:1px solid #333;
+    padding:12px 18px;
+}
+.sub_wrap #smoothie {
+    margin-top:80px;
+}
+/* web - 서브웨이 화면 끝 */
+
