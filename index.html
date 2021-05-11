@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.lineProgressbar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/pageScroll_3.3.js"></script>
+    <script src="js/jquery.lineProgressbar.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/side.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffleText.js"></script>
+    <title>Jiyoon's Portfolio</title>
+</head>
+<body>
+    <section id="page1">
+        <header>
+			<h1><a href="#"><img src="img/logo.png" alt="logo" id="logo"></a></h1>
+        </header>
+        <div class="box">
+            <div class="top_border"></div>
+            <div class="top_edge"></div>
+            <h2 class="maintext">Thisis1st</h2>
+            <div class="bot_border"></div>
+            <div class="bot_edge"></div>
+        </div>
+        <div id="down"><img src="img/scroll.png" alt="scroll down"></div>
+    </section>
+    <div class="side">
+        <ul>          
+             <li title="page6">WORKS<span></span></li>
+             <li title="page5">UX/UI DESIGN<span></span></li>
+             <li title="page4">WEB DESIGN<span></span></li>
+             <li title="page3">CAREER<span></span></li>
+             <li title="page2">ABOUT ME<span></span></li>
+         </ul>
+    </div>
+    <section id="page2">
+          <section class="container">
+           <h2><div></div>ABOUT ME</h2>
+           <div class="wrap">
+                <div id="profile">
+                   <div class="title">
+                        <h3>PROFILE</h3>
+                   </div>
+                   <div>
+                       <table>
+                           <tr>
+                               <td>Name</td>
+                               <td>Ji Yoon Park</td>
+                           </tr>
+                           <tr>
+                               <td>Email</td>
+                               <td>wldbsl1011@gmail.com</td>
+                           </tr>
+                           <tr>
+                               <td>Phone</td>
+                               <td>+82 10-5401-4537</td>
+                           </tr>
+                           <tr>
+                               <td>Date of birth</td>
+                               <td>1994.10.11</td>
+                           </tr>
+                           <tr>
+                               <td>Address</td>
+                               <td>334, Nonhyeon-ro, Gangnam-gu, Seoul</td>
+                           </tr>
+                       </table>
+                   </div>
+                </div>
+                <div id="likes">
+                   <div class="title">
+                        <h3>LIKES</h3>
+                    </div>
+                        <ul>
+                            <li>
+                                <img src="img/inter01.png" alt="picture">
+                                <p>Photo</p>
+                            </li>
+                            <li>
+                                <img src="img/inter02.png" alt="music">
+                                <p>Music</p>
+                            </li>
+                            <li>
+                                <img src="img/inter03.png" alt="travel">
+                                <p>Travel</p>
+                            </li>
+                            <li>
+                                <img src="img/inter04.png" alt="movie">
+                                <p>Movie</p>
+                            </li>
+                            <li>
+                                <img src="img/inter05.png" alt="game">
+                                <p>Game</p>
+                            </li>
+                            <li>
+                                <img src="img/inter06.png" alt="swim">
+                                <p>Swimming</p>
+                            </li>
+                        </ul>
+                </div>
+                <div id="photo"><img src="img/profile.jpg" alt="photo"></div>
+                <div id="skills">
+                    <div class="title">
+                        <h3>SKILL</h3>
+                    </div>
+                    <table>
+                        <tr>
+                            <td><img src="img/skill1.png" alt="photoshop"></td>
+                            <td>
+                                <p>90%</p>
+                                <p>Adobe Photoshop</p>
+                                <div id="demoprogressbar1"></div>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/skill2.png" alt="illustrator"></td>
+                            <td>
+                                <p>85%</p>
+                                <p>Adobe Illustrator</p>
+                                <div id="demoprogressbar2"></div>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/skill3.png" alt="indesign"></td>
+                            <td>
+                                <p>70%</p>
+                                <p>Adobe Indesign</p>
+                                <div id="demoprogressbar3"></div>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/skill4.png" alt="aftereffects"></td>
+                            <td>
+                                <p>40%</p>
+                                <p>Adobe After Effects</p>
+                                <div id="demoprogressbar4"></div>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/skill5.png" alt="html/css"></td>
+                            <td>
+                                <p>90%</p>
+                                <p>HTML5/CSS3</p>
+                                <div id="demoprogressbar5"></div>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/skill6.png" alt="jquery"></td>
+                            <td>
+                                <p>75%</p>
+                                <p>jQuery</p>
+                                <div id="demoprogressbar6"></div>
+                                <p></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="lang">
+                    <div class="title">
+                        <h3>LANGUAGE</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>KOR</p>
+                            <p>Native</p>
+                        </li>
+                        <li>
+                            <p>ENG</p>
+                            <p>Intermediate</p>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+    </section>
+    <section id="page3">
+       <section class="container">
+            <h2><div></div>CAREER</h2>
+            <div class="wrap">
+                <div id="edu">
+                   <div class="title">
+                        <h3>EDUCATION &amp; EXPERIENCE</h3>
+                   </div>
+                   <table>
+					    <tr>
+                           <td>2018.08</td>
+                           <td><img src="img/exp.png" alt="experience"></td>
+							<td>Arcmob<p>Assistant for contents design and publishing</p></td>
+                       </tr>
+                       <tr>
+                           <td id="long">2013.03 - 2018.08</td>
+                           <td><img src="img/edu.png" alt="education"></td>
+						   <td>Dankook University, Yong-in, Korea<p>Bachelor of Arts in English Literature and Counselling</p></td>
+                       </tr>
+                       <tr>
+                           <td id="long">2017.09 - 2018.01</td>
+                           <td><img src="img/edu.png" alt="education"></td>
+                           <td>UX/UI Design Training Course<p>Green Computer Academy, Ulsan</p></td>
+                       </tr>
+                       <tr>
+                           <td id="long">2017.01 - 2017.02</td>
+                           <td><img src="img/exp.png" alt="experience"></td>
+                           <td>Dong-mun Wheel Store<p>Creating website by using cafe24(solution)</p></td>
+                       </tr>
+					    <tr>
+                           <td id="long">2016.01 - 2017.01</td>
+                           <td><img src="img/exp.png" alt="experience"></td>
+                           <td>Aupair Program<p>in San Francisco</p></td>
+                       </tr>
+					   <tr>
+                           <td id="long">2013.08 - 2014.02</td>
+                           <td><img src="img/exp.png" alt="experience"></td>
+                           <td>HowtoListen Co.<p>DB</p></td>
+                       </tr>
+                       <tr>
+                           <td>2013.02</td>
+                           <td><img src="img/edu.png" alt="education"></td>
+                           <td>Nammok Highschool, Ulsan, Korea</td>
+                       </tr>
+                   </table>
+                </div>
+                <div id="license">
+                    <div class="title">
+                        <h3>LICENSE</h3>
+                    </div>
+                    <table>
+						<tr>
+                            <td>2018. 04</td>
+                            <td>Craftsman Computer Graphics Operation</td>
+                        </tr>
+						<tr>
+                            <td>2018. 02</td>
+                            <td>GTQ(Graphic Technology Qualification) Indesign Lv.1</td>
+                        </tr>
+                        <tr>
+                            <td>2017. 11</td>
+                            <td>GTQ Illustrator Lv.1</td>
+                        </tr>
+                        <tr>
+                            <td>2017. 09</td>
+                            <td>Computer Specialist in Spreadsheet & Database Level-1</td>
+                        </tr>
+                        <tr>
+                            <td>2017. 05</td>
+                            <td>GTQ Photoshop Lv.1</td>
+                        </tr>
+                        <tr>
+                            <td>2015. 03</td>
+                            <td>Driver's License</td>
+                        </tr>
+                        <tr>
+                            <td>2005. 11</td>
+                            <td>Word Processor Specialist</td>
+                        </tr>
+                    </table>
+                </div>
+           </div>
+        </section>
+    </section>
+    <section id="page4">
+        <section class="container">
+            <h2><div></div>WEB DESIGN</h2>
+            <div>
+                <ul>
+                    <li id="web1">
+                        <div>
+                            <img src="img/web1.png" alt="subway">
+                            <div class="blackbg"><a href="web01.html"><img src="img/direct.png" alt="direction"></a></div>
+                        </div>
+                        <h4>SUBWAY Website</h4>
+                        <p>Photoshop, Illustrator, Bracket<br>2017. 11<br>Design 100%, Coding 100%</p>
+                        <p>최신 웹트렌드에 따라 카드그리드로 콘텐츠를 정리하였으며, 플래시로 제작된 기존 메인 배너를 슬라이더를 사용하여 나타내었습니다. 메뉴 이용 빈도수에 따라 IA를 재정비하여 사용자의 편의성을 높였으며, 이미지 사용으로 가독성을 높이고 시각적으로 집중할 수 있게 하였습니다. 그리드에는 grey를 사용하여 깔끔한 느낌을 주는 반면, 로고의 green과 yellow 계열 색상을 사용해 포인트를 주었습니다. </p>
+                    </li>
+                    <li id="web2">
+                        <div>
+                            <img src="img/web2.png" alt="library">
+                            <div class="blackbg"><a href="web02.html"><img src="img/direct.png" alt="direction"></a></div>
+                        </div>
+						<h4>Library · Lifelong Learning Center Website
+							<br><span>of Seoul Metropolitan Office of Education</span>
+						</h4>
+                        <p>Photoshop, Illustrator, Bracket<br>2017. 12<br>Design 100%, Coding 100%</p>
+                        <p>기존의 노후화 된 홈페이지에 최신 트렌드에 맞는 디자인을 반영하여 기관의 이미지를 제고하고자 하였습니다. 가독성이 떨어지는 기존의 레이아웃을 카드 형식으로 변경하여 가독성을 높였으며, Blue 컬러의 사용으로 깔끔한 이미지를 주고자 하였습니다. 사용 빈도수가 높은 메뉴들을 퀵 메뉴로 제공해 편의성을 높이고, 반응형 웹으로 제작하여 웹 접근성을 확보하였습니다.</p>
+                    </li>
+                    <li id="web3">
+                        <div>
+                            <img src="img/web3.png" alt="Ghirardelli">
+                            <div class="blackbg"><a href="web03.html"><img src="img/direct.png" alt="direction"></a></div>
+                        </div>
+                        <h4>Ghirardelli Chocolate Website</h4>
+                        <p>Photoshop, Illustrator, Bracket<br>2018. 01<br>Design 100%, Coding 100%</p>
+                        <p>'세계 3대 초콜렛'이라는 브랜드 아이덴티티를 충분히 느낄 수 있도록 감각적으로 디자인하고자 하였습니다. 이미지배너, 비디오, 애니메이션의 사용으로 브랜드 제품에 대한 홍보를 최대화하였으며 단순하게 제품을 알리는 비주얼이 아닌 Ghirardelli의 오래된 역사와 제품의 퀄리티, 다양한 정보, 직원의 행복까지 최고를 만드는 Ghhirardelli의 이미지를 전달하고 있습니다. </p>
+                    </li>
+					<li id="web4">
+                        <div>
+                            <img src="img/web3.png" alt="Ghirardelli">
+                            <div class="blackbg"><a href="web03.html"><img src="img/direct.png" alt="direction"></a></div>
+                        </div>
+                        <h4>Ghirardelli Chocolate Website</h4>
+                        <p>Photoshop, Illustrator, Bracket<br>2018. 01<br>Design 100%, Coding 100%</p>
+                        <p>'세계 3대 초콜렛'이라는 브랜드 아이덴티티를 충분히 느낄 수 있도록 감각적으로 디자인하고자 하였습니다. 이미지배너, 비디오, 애니메이션의 사용으로 브랜드 제품에 대한 홍보를 최대화하였으며 단순하게 제품을 알리는 비주얼이 아닌 Ghirardelli의 오래된 역사와 제품의 퀄리티, 다양한 정보, 직원의 행복까지 최고를 만드는 Ghhirardelli의 이미지를 전달하고 있습니다. </p>
+                    </li>					
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section id="page5">
+        <section class="container">
+            <h2><div></div>UX/UI DESIGN</h2>
+            <div>
+                <img src="img/uxui.png" alt="wanja">
+                <div class="blackbg"><a href="uxui.html"><img src="img/direct.png" alt="direction"></a></div>
+            </div>
+            <div class="text">
+                <h3>완자 : <span>완벽한 자취생활의 모든 것</span><br><p>Wanja : everything for living alone perfectly</p></h3>
+                <p>사용 프로그램 : Photoshop, Illustrator</p>
+                <p>제작시기 : 2017.11</p>
+                <p>완자는 자취 생활에 필요한 여러 가지 꿀팁 공유를 목적으로 만들어졌으며, 꿀팁을 보관하고 공유하는 것 뿐만아니라, 사용자들간의 자유로운 정보 공유도 가능합니다. 플랫한 디자인과 아이콘을 통하여 심플함을 강조하였고, UI가 한눈에 들어오도록 구성하였습니다. '꿀팁'에서 '꿀'과 '벌'을 연상하여 귀여운 꿀벌을 어플의 캐릭터로 사용하였고, 노란색과 주황색을 메인 컬러로 사용하여 친근감과 따듯한 느낌 주었습니다. 많은 컨텐츠로 구성 되어 있지만 설명 위주의 컨텐츠가 아닌 이미지 위주의 컨텐츠로 사용자들의 흥미를 유도하며, 설명글은 간략하게 요약하여 지루하지 않도록 구성하였습니다.</p>
+            </div>
+        </section>
+    </section>
+    <section id="page6">
+        <section class="container">
+            <h2><div></div>WORKS</h2>
+            <div id="wrap">
+                <ul>
+                    <li id="work">
+                        <img src="img/work_org01.jpg" alt="work1">
+                    </li>
+                    <li id="work">
+                        <img src="img/work_org03.jpg" alt="work3">
+                    </li>
+                    <li id="work">
+                        <img src="img/work_org05.jpg" alt="work5">
+                    </li>
+                    <li id="work">
+                        <img src="img/work_org07.jpg" alt="work7">
+                    </li>
+                    <li id="work">
+                        <img src="img/work_org02.jpg" alt="work2">
+                    </li>
+                    <li id="work">
+                        <img src="img/work_org04.jpg" alt="work4">
+                    </li>
+                    <li>
+                       <a href="smoothie.html"><img src="img/work_org06.jpg" alt="work6"></a>
+                    </li>
+                    <li id="work">
+                        <img src="img/work_org08.jpg" alt="work8">
+                    </li>
+                </ul>
+             </div>
+             <div class="modal">
+                <span><img src="img/exit.png" alt="exit"></span>
+                <img class="modalimg" src="">
+                <p class="modaltext"></p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
